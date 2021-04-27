@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+  
+  <!-- js scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--leaflet link-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin="">
+  </script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 12px; text-align: center; background-color: rgba(0, 0, 0, 0.562); }
+  </style>
+</head>
+<body onload="Loading()">
+  <section class="onload">
+    <img src="https://media.giphy.com/media/52qtwCtj9OLTi/giphy.gif" alt="Loading page">
+  </section>
+  <div class="pattern-top">
+
+  </div>
+  <div class="map">
+
+    <section class="top">
+      <p class="name">IP Address Tracker</p>
+
+      <div class="search">
+        <input type="text" name="ip-address" id="ip-search" placeholder="Search for any IP address or domain">
+        <img src="images/icon-arrow.svg" alt="enter" class="ip-icon" draggable="false">
+      </div>
+
+      <div class="values">
+        <div class="ip-info i1">
+          <p>
+            IP Address
+          </p>
+          <h3 class="ip-address">
+            0.0.0.0
+          </h3>
+        </div>
+        <div class="ip-info i2">
+          <p>
+            Location
+          </p>
+          <h3 class="location">
+            Location
+          </h3>
+        </div>
+        <div class="ip-info i3">
+          <p>
+            Timezone
+          </p>
+          <h3 class="timezone">
+            -00:00
+          </h3>
+        </div>
+        <div class="ip-info i4">
+          <p>
+            ISP
+          </p>
+          <h3 class="isp">
+            ISP-INFO
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section id="map">
+    </section>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/praise_oyeniyi">Praise_Oyeniyi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
