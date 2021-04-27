@@ -32,11 +32,6 @@ $(document).ready(()=>{
     }
 
     function ipValue(value){
-        mapPreview();
-        
-        function mapPreview(){
-            document.querySelector('.mapload').style.display = 'none';
-        }
         $.getJSON("https://geo.ipify.org/api/v1?apiKey=at_JIoMWBdMFHIXRkN4QEnexI7pz6uSV" + "&domain=" +value, function(data){
             ipData(data)
         }
