@@ -9,10 +9,10 @@ $(document).ready(()=>{
     $('#ip-search').keyup(clicked);
 
     function clicked(e){
-        if($('#ip-search').val().length == 0){
+        if(e.key === "Enter" || e.keyCode == 13){
+            if($('#ip-search').val().length == 0){
             alert('Input a valid IP-address/Domain name')
         }
-        if(e.key === "Enter" || e.keyCode == 13){
             search(e.target.value);
         }
     }
